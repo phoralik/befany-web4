@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dentální studio Befany — kvalitní zubní péče ve Slavičíně. Specializujeme se na náročné případy, mikroskopickou endodoncii a digitální stomatologii.">
+  <title>Befany — Dentální studio Slavičín</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ ISLAND NAVIGATION ============ -->
+  <nav class="island-nav" id="islandNav">
+    <a href="#hero" class="nav-logo">
+      <img src="assets/befany-logo.svg" alt="Befany" height="28">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#aktuality">Aktuality</a>
+      <a href="#sluzby">Služby</a>
+      <a href="#technologie">Technologie</a>
+      <a href="#tym">Tým</a>
+      <a href="#cenik">Ceník</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <a href="#kontakt" class="nav-cta">Objednat se</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <i data-lucide="menu" class="icon-menu"></i>
+      <i data-lucide="x" class="icon-close"></i>
+    </button>
+  </nav>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="#aktuality">Aktuality</a>
+      <a href="#sluzby">Služby</a>
+      <a href="#technologie">Technologie</a>
+      <a href="#tym">Tým</a>
+      <a href="#cenik">Ceník</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="mobile-cta">Objednat se</a>
+    </div>
+  </div>
+
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-ambient">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-split">
+      <div class="hero-content">
+        <img src="assets/befany-logo.svg" alt="Dentální studio Befany" class="hero-logo">
+        <h1 class="hero-headline">Zuby, se kterými se zakousnete do&nbsp;života</h1>
+        <p class="hero-sub">Specializujeme se na kvalitní ošetření a funkční dlouhodobá řešení&nbsp;&mdash; i&nbsp;pro&nbsp;náročné&nbsp;případy.</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-primary">Objednat konzultaci</a>
+          <a href="#sluzby" class="btn btn-ghost">Naše služby</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-frame glass-card">
+          <img src="assets/hero-bg.jpg" alt="Recepce dentálního studia Befany ve Slavičíně">
+        </div>
+      </div>
+    </div>
+    <!-- Aktuality — floating glass banner in hero -->
+    <div class="hero-aktuality" id="aktuality">
+      <div class="hero-aktuality-inner glass-card">
+        <div class="aktuality-pulse"></div>
+        <div class="aktuality-icon">
+          <i data-lucide="bell-ring"></i>
+        </div>
+        <div class="aktuality-content">
+          <div class="aktuality-items">
+            <div class="aktuality-item">
+              <span class="aktuality-badge">Nové</span>
+              <p><strong>Březen 2026</strong> — Omezení provozu, sledujte aktuální ordinační hodiny.</p>
+            </div>
+            <div class="aktuality-divider"></div>
+            <div class="aktuality-item">
+              <p><strong>Únor — Červen 2026</strong> — Dentální hygiena dočasně pozastavena. O obnovení vás budeme informovat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <i data-lucide="chevron-down"></i>
+    </div>
+  </section>
+
+
+  <!-- ============ O NÁS (positioning) ============ -->
+  <section class="section section-about" id="onas">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-label">O nás</span>
+          <h2>Nejsme továrna na plomby</h2>
+          <p class="about-lead">Celkové zdraví úzce souvisí se zdravím dutiny ústní. Proto se primárně zaměřujeme na prevenci a řešení problémů — ne jen na jejich zalepení.</p>
+          <p>Věnujeme se pacientům, kteří očekávají funkční a dlouhodobé řešení. Každý případ posuzujeme individuálně a na rovinu řekneme, co můžeme nabídnout — a&nbsp;co&nbsp;ne.</p>
+          <div class="about-image reveal">
+            <img src="assets/o-nas.jpg" alt="Interiér dentálního studia Befany — moderní čekárna a ordinace">
+          </div>
+        </div>
+        <div class="about-values reveal">
+          <div class="value-card glass-card-light">
+            <i data-lucide="shield-check"></i>
+            <h4>Kvalita nad kvantitou</h4>
+            <p>Raději méně pacientů, ale kvalitní práce s dostatkem času na každého.</p>
+          </div>
+          <div class="value-card glass-card-light">
+            <i data-lucide="heart-handshake"></i>
+            <h4>Upřímný přístup</h4>
+            <p>Řekneme vám pravdu o stavu vašeho chrupu. Pokud něco neumíme, doporučíme specialistu.</p>
+          </div>
+          <div class="value-card glass-card-light">
+            <i data-lucide="graduation-cap"></i>
+            <h4>Neustálé vzdělávání</h4>
+            <p>Pravidelně se školíme v nejnovějších postupech a technologiích.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ SLUŽBY ============ -->
+  <section class="section section-services" id="sluzby">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Služby</span>
+        <h2>Komplexní péče o váš úsměv</h2>
+        <p class="section-desc">Od prevence po náročné rekonstrukce — vše pod jednou střechou.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <i data-lucide="search"></i>
+          </div>
+          <h3>Preventivní prohlídky</h3>
+          <p>Základ zdravého úsměvu. Pravidelné kontroly pomáhají odhalit problémy dříve, než se stanou bolestivými.</p>
+        </div>
+
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3>Dentální hygiena</h3>
+          <p>Profesionální čištění pro zdravé dásně a zářivý úsměv. Odstranění zubního kamene a pigmentací.</p>
+        </div>
+
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <i data-lucide="sun"></i>
+          </div>
+          <h3>Bělení zubů</h3>
+          <p>Šetrné bělení pro přirozeně zářivý úsměv. Bezpečné a účinné metody.</p>
+        </div>
+
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <i data-lucide="puzzle"></i>
+          </div>
+          <h3>Konzervativní zubní lékařství</h3>
+          <p>Kvalitní fotokompozitní výplně s důrazem na zachování přirozené struktury zubu.</p>
+        </div>
+
+        <div class="service-card glass-card reveal">
+          <div class="service-icon service-icon-accent">
+            <i data-lucide="microscope"></i>
+          </div>
+          <h3>Mikroskopická endodoncie</h3>
+          <p>Ošetření kořenových kanálků pod mikroskopem — maximální přesnost a úspěšnost záchrany zubu.</p>
+          <span class="service-badge">2 mikroskopy</span>
+        </div>
+
+        <div class="service-card glass-card reveal">
+          <div class="service-icon service-icon-accent">
+            <i data-lucide="monitor-smartphone"></i>
+          </div>
+          <h3>Digitální stomatologie</h3>
+          <p>Intraorální skener, CAD design a 3D tisk modelů — přesné a komfortní ošetření bez nepříjemných otisků.</p>
+          <span class="service-badge">Digitální otisky</span>
+        </div>
+
+        <div class="service-card glass-card reveal">
+          <div class="service-icon service-icon-accent">
+            <i data-lucide="layers"></i>
+          </div>
+          <h3>Teleskopické náhrady</h3>
+          <p>Moderní alternativa k implantátům. Stabilní, estetické a funkční řešení pro náročné případy.</p>
+        </div>
+
+        <div class="service-card glass-card reveal">
+          <div class="service-icon">
+            <i data-lucide="refresh-cw"></i>
+          </div>
+          <h3>Celkové rekonstrukce</h3>
+          <p>Kompletní obnova chrupu — od diagnostiky po výsledek, který změní váš život.</p>
+        </div>
+
+        <div class="service-card glass-card reveal">
+          <div class="service-icon service-icon-accent">
+            <i data-lucide="smile"></i>
+          </div>
+          <h3>Snímatelné náhrady</h3>
+          <p>Celkové protézy na principu přísátí. Drží bez lepidla, fungují jako vlastní zuby. Ověřeno&nbsp;testem&nbsp;jablkem.</p>
+          <span class="service-badge">Unikátní v regionu</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ TECHNOLOGIE ============ -->
+  <section class="section section-tech" id="technologie">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Technologie</span>
+        <h2>Využíváme nejmodernější technologie</h2>
+        <p class="section-desc">Moderní vybavení slouží vašemu komfortu a přesnosti ošetření.</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card reveal">
+          <div class="tech-icon glass-card-light">
+            <i data-lucide="microscope"></i>
+          </div>
+          <h3>2&times; operační mikroskop</h3>
+          <p>Až 25násobné zvětšení pro maximální přesnost při ošetření kořenových kanálků a&nbsp;náročných zákroků.</p>
+        </div>
+
+        <div class="tech-card reveal">
+          <div class="tech-icon glass-card-light">
+            <i data-lucide="scan"></i>
+          </div>
+          <h3>Intraorální skener</h3>
+          <p>Digitální otisky bez nepříjemné otiskovací hmoty. Rychlé, přesné a&nbsp;komfortní.</p>
+        </div>
+
+        <div class="tech-card reveal">
+          <div class="tech-icon glass-card-light">
+            <i data-lucide="pen-tool"></i>
+          </div>
+          <h3>CAD design</h3>
+          <p>Virtuální návrhy zubních náhrad pro dokonalé přizpůsobení tvaru, barvy a&nbsp;funkce.</p>
+        </div>
+
+        <div class="tech-card reveal">
+          <div class="tech-icon glass-card-light">
+            <i data-lucide="box"></i>
+          </div>
+          <h3>3D tisk modelů</h3>
+          <p>Přesné diagnostické a pracovní modely vytištěné přímo v&nbsp;ordinaci.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ TÝM ============ -->
+  <section class="section section-team" id="tym">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Náš tým</span>
+        <h2>Potkejte náš tým</h2>
+        <p class="section-desc">Tým zkušených odborníků, kteří se neustále vzdělávají ve svém oboru.</p>
+      </div>
+
+      <div class="team-grid">
+
+        <div class="team-card reveal">
+          <div class="team-photo" data-initials="FB">
+            <!-- Placeholder for photo -->
+          </div>
+          <h3>MDDr. František Berčík</h3>
+          <p class="team-role">Zubní lékař</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-photo" data-initials="JB">
+          </div>
+          <h3>MDDr. Jana Berčíková</h3>
+          <p class="team-role">Zubní lékařka</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-photo" data-initials="MP">
+          </div>
+          <h3>MDDr. Magdalena Pinďáková</h3>
+          <p class="team-role">Zubní lékařka</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-photo" data-initials="TČ">
+          </div>
+          <h3>MDDr. Tereza Čížová</h3>
+          <p class="team-role">Zubní lékařka</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-photo" data-initials="TP">
+          </div>
+          <h3>MDDr. Tereza Pelcová</h3>
+          <p class="team-role">Zubní lékařka</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-photo" data-initials="PD">
+          </div>
+          <h3>Bc. Pavla Drgová</h3>
+          <p class="team-role">Zubní asistentka</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-photo" data-initials="NŠ">
+          </div>
+          <h3>Nela Šabršulová, DiS.</h3>
+          <p class="team-role">Zubní asistentka</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-photo" data-initials="EB">
+          </div>
+          <h3>Eliška Brázdilová</h3>
+          <p class="team-role">Zubní asistentka</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-photo" data-initials="MB">
+          </div>
+          <h3>Miroslava Březáčková</h3>
+          <p class="team-role">Recepční</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ CENÍK ============ -->
+  <section class="section section-pricing" id="cenik">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Ceník</span>
+        <h2>Transparentní ceny</h2>
+        <p class="section-desc">Přehled orientačních cen nejčastějších výkonů. Přesnou cenu vám sdělíme po vyšetření.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card glass-card reveal">
+          <h3>Výplně</h3>
+          <div class="pricing-items">
+            <div class="pricing-row">
+              <span>Fotokompozitní výplň — malá</span>
+              <span class="pricing-price">od 2 000 Kč</span>
+            </div>
+            <div class="pricing-row">
+              <span>Fotokompozitní výplň — velká</span>
+              <span class="pricing-price">od 3 500 Kč</span>
+            </div>
+            <div class="pricing-row">
+              <span>Fotokompozitní výplň — rozsáhlá</span>
+              <span class="pricing-price">od 5 100 Kč</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-card glass-card reveal">
+          <h3>Endodoncie</h3>
+          <div class="pricing-items">
+            <div class="pricing-row">
+              <span>Ošetření kořenového kanálku — jednokořenový</span>
+              <span class="pricing-price">od 3 780 Kč</span>
+            </div>
+            <div class="pricing-row">
+              <span>Ošetření kořenového kanálku — vícekořenový</span>
+              <span class="pricing-price">od 9 160 Kč</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-card glass-card reveal">
+          <h3>Protetika</h3>
+          <div class="pricing-items">
+            <div class="pricing-row">
+              <span>Celokeramická korunka</span>
+              <span class="pricing-price">od 8 530 Kč</span>
+            </div>
+            <div class="pricing-row">
+              <span>Preventivní prohlídka</span>
+              <span class="pricing-price">hrazeno ZP</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pricing-download reveal">
+        <a href="#" class="btn btn-outline">
+          <i data-lucide="download"></i>
+          Kompletní ceník ke stažení (PDF)
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============ RECENZE ============ -->
+  <section class="section section-reviews" id="recenze">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Recenze</span>
+        <h2>Co říkají naši pacienti</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card glass-card-light reveal">
+          <div class="review-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="review-text">&ldquo;Profesionální přístup, moderní vybavení a příjemné prostředí. Pan doktor mi doslova změnil život — konečně mám protézy, které drží a nemusím používat lepidlo.&rdquo;</p>
+          <span class="review-author">— Pacient z Google recenzí</span>
+        </div>
+        <div class="review-card glass-card-light reveal">
+          <div class="review-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="review-text">&ldquo;Výborná péče. Doporučuji každému, kdo hledá kvalitního zubaře ve Slavičíně a okolí.&rdquo;</p>
+          <span class="review-author">— Pacient z Google recenzí</span>
+        </div>
+        <div class="review-card glass-card-light reveal">
+          <div class="review-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="review-text">&ldquo;Ordinaci jsem si našel přes internet až z Ameriky. Kvalita ošetření je na velmi vysoké úrovni.&rdquo;</p>
+          <span class="review-author">— Pacient z Google recenzí</span>
+        </div>
+      </div>
+      <div class="reviews-badge reveal">
+        <div class="reviews-score glass-card-light">
+          <span class="score-number">5.0</span>
+          <div class="score-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <span class="score-source">Google Recenze</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ KONTAKT ============ -->
+  <section class="section section-contact" id="kontakt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Kontakt</span>
+        <h2>Ozvěte se nám</h2>
+        <p class="section-desc">Máte dotaz nebo se chcete objednat? Napište nám nebo zavolejte.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <div class="contact-card glass-card-light">
+            <i data-lucide="map-pin"></i>
+            <div>
+              <h4>Adresa</h4>
+              <p>Komenského 10 (4. patro)<br>763 21 Slavičín</p>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card-light">
+            <i data-lucide="phone"></i>
+            <div>
+              <h4>Telefon</h4>
+              <p><a href="tel:+420771167069">+420 771 167 069</a></p>
+              <p class="contact-note">Po — Pá, 7:00 — 15:00</p>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card-light">
+            <i data-lucide="mail"></i>
+            <div>
+              <h4>E-mail</h4>
+              <p><a href="mailto:info@befany.cz">info@befany.cz</a></p>
+              <p class="contact-note">Odpovídáme do 24 hodin</p>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card-light">
+            <i data-lucide="message-circle"></i>
+            <div>
+              <h4>Nedovoláte se?</h4>
+              <p>Napište SMS nebo e-mail —<br>ozveme se vám zpět.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form glass-card" id="contactForm">
+            <h3>Napište nám</h3>
+            <div class="form-group">
+              <label for="name">Jméno a příjmení</label>
+              <input type="text" id="name" name="name" required placeholder="Jan Novák">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required placeholder="jan@email.cz">
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="+420 ...">
+            </div>
+            <div class="form-group">
+              <label for="message">Zpráva</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Popište váš dotaz nebo důvod návštěvy..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i data-lucide="send"></i>
+              Odeslat zprávu
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img src="assets/befany-logo.svg" alt="Befany" height="36" class="footer-logo">
+          <p>Dentální studio ve Slavičíně.<br>Kvalitní péče s lidským přístupem.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/dsbefany" target="_blank" rel="noopener" aria-label="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-hours">
+          <h4>Ordinační hodiny</h4>
+          <table class="hours-table">
+            <tr><td>Pondělí</td><td>7:00 — 15:00</td></tr>
+            <tr><td>Úterý</td><td>7:00 — 18:30</td></tr>
+            <tr><td>Středa</td><td>7:00 — 15:00</td></tr>
+            <tr><td>Čtvrtek</td><td>7:00 — 18:30</td></tr>
+            <tr><td>Pátek</td><td>7:00 — 12:00</td></tr>
+          </table>
+          <p class="footer-note">Recepce: 7:00–12:00, 12:30–15:00</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Rychlé odkazy</h4>
+          <ul>
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#technologie">Technologie</a></li>
+            <li><a href="#tym">Tým</a></li>
+            <li><a href="#cenik">Ceník</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Kontakt</h4>
+          <p>Komenského 10, 4. patro<br>763 21 Slavičín</p>
+          <p><a href="tel:+420771167069">+420 771 167 069</a></p>
+          <p><a href="mailto:info@befany.cz">info@befany.cz</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dentální studio Befany. Všechna práva vyhrazena.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
